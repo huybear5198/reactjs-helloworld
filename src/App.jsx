@@ -19,7 +19,7 @@ const App = () => {
           <img src={reactLogo} className="logo react" alt="React logo" />
         </a>
       </div>
-      <h1>Hello World !!!</h1>
+      <h1>HuyBear</h1>
 
       <MyComponent />
       <SecondComponent />
