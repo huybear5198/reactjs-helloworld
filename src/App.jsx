@@ -18,9 +18,19 @@ const App = () => {
     country: "vietnam"
   };
 
-  const addNewTodo = (task) => {
-    alert(`add new todo ${task}`);
+  const addNewTodo = (name) => {
+    const newTodo = {
+      id: randomIntFromInterval(1, 100000),
+      name: name
+    }
+
+    setTodoList([...todoList, newTodo]);
   }
+
+  const randomIntFromInterval = (min, max) => {
+    return Math.floor(Math.random() * (max - min + 1) + min);
+  }
+
   return (
     <div className="todo-container">
       <div className="todo-title">Todo List</div>

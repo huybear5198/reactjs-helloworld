@@ -3,12 +3,13 @@ import { useState } from "react";
 const TodoNew = (props) => {
     //useState Hook (getter/setter)
     const [valueInput, setValueInput] = useState("HuyBear");
-    console.log(props);
+    //console.log(props);
     const { addNewTodo } = props;
 
     const handleClick = () => {
         //alert("Click me");
-        console.log(`>> Check value of ${valueInput}`);
+        //console.log(`>> Check value of ${valueInput}`);
+        addNewTodo(valueInput);
     }
 
     const handleOnChange = (name) => {
