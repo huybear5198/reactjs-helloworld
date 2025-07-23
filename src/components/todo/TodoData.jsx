@@ -4,6 +4,7 @@ const TodoData = (props) => {
     const { address, country } = props.data;
     const { name, age, data } = props;
     //console.log(">> Check address: ", address);
+    console.log(">>check props on todoData: ", props);
     return (
         <div className='todo-data'>
             <div>My name is {name}</div>
@@ -11,6 +12,8 @@ const TodoData = (props) => {
             <div>I live in {address}</div>
             <div>Learning ReactJS</div>
             <div>Watch Youtube</div>
+            <div>Print Props TO DO LIST:</div>
+            {JSON.stringify(props.todoList)}
         </div>
     );
 }
