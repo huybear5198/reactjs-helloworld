@@ -13,7 +13,7 @@ const TodoData = (props) => {
             {todoList.map((item, index) => {
                 console.log(`item: ${item}, index: ${index}`)
                 return (
-                    <div className="todo-item">
+                    <div className="todo-item" key={index}>
                         <div>{item.name}</div>
                         <button>Remove</button>
                     </div>
